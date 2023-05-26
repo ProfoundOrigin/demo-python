@@ -65,7 +65,7 @@ def main(options: dict = None) -> str:
         value = iter(value)
 
     sorted(value, key=len)
-    nofunctionlikethis().open()
+    nofunctionlikethis()
     f = open("/tmp/.deepsource.toml", "r")
     f.write("config file.")
     f.close()
