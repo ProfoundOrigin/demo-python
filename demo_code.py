@@ -46,10 +46,6 @@ class ImaginaryNumber:
     def __init__(self):
         self.real = 0
         self.imaginary = 1
-        
-        
-        
-        
 
     def __getattr__(self, key):
         return key
