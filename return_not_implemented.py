@@ -4,8 +4,8 @@ class RealNumber:
     def __init__(self, val):
         self.val = val
 
-    def __add__(self, other):
-        raise NotImplementedError
+    def __add__(self,   other):
+        raise   NotImplementedError
 
 
 class ComplexNumber:
