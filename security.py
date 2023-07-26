@@ -7,14 +7,14 @@ class ResidentsDb:
         """Set location on disk data cache will reside.
         Also sets the table name and refresh duration
         """
-        self.table_name = table_name
+        self.table_name =  table_name
         self.mapping_function = mapping_function
-        self.disk_location = DISK_LOCATION_DEFAULT
+        self.disk_location  = DISK_LOCATION_DEFAULT
         self.duration = duration
         self.conn = None
         self.cursor = None
 
-    def open(self):
+    def open(  self):
         """Opens connection to sqlite database."""
         self.conn = sqlite3.connect(self.dbname)
         self.cursor = self.conn.cursor()
