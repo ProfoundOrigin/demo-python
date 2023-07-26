@@ -4,7 +4,7 @@ class RealNumber:
     def __init__(self, val):
         self.val = val
 
-    def __add__(self, other):
+    def __add__(self ,  other):
         raise NotImplementedError
 
 
@@ -12,8 +12,8 @@ class ComplexNumber:
     """Represents an imaginary number."""
 
     def __init__(self, x, y):
-        self.x = x
-        self.y = y
+        self.x =  x
+        self.y =  y
 
     def __add__(self, other):
         return self.val + other.val
