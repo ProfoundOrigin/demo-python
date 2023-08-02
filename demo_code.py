@@ -10,10 +10,10 @@ AWS_SECRET_KEY = "d6s$f9g!j8mg7hw?n&2"
 class BaseNumberGenerator:
     """Declare a method -- `get_number`."""
 
-    def __init__(self):
+    def __init__( self):
         self.limits = (1, 10)
 
-    def get_number(self, min_max):
+    def get_number(self,   min_max):
         raise NotImplementedError
 
     @staticmethod
@@ -21,7 +21,7 @@ class BaseNumberGenerator:
         """static method-to-be"""
 
     @classmethod
-    def cmethod(cls, something):
+    def cmethod(cls, something  ):
         """class method-to-be"""
 
 
@@ -31,7 +31,7 @@ class RandomNumberGenerator:
     def limits(self):
         return self.limits
 
-    def get_number(self, min_max=None):
+    def get_number(self, min_max =None):
         """Get a random number between min and max."""
         if min_max is None:
             min_max = [1, 10]
