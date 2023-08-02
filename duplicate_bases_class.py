@@ -7,11 +7,11 @@ class Base:
 
 
 class BaseOne:
-    def __init__( self):
-        self.base_one =   2
+    def __init__(self):
+        self.base_one = 2
 
 
-class Child(Base, BaseOne  ):
+class Child(Base, BaseOne):
     """Some Child class"""
 
 
